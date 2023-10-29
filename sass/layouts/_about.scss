@@ -1,0 +1,42 @@
+.about {
+    &__box {
+        @include absCenter;
+        height: 15rem;
+        width: 80%;
+        background-color: $color-body-background;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        position: relative;
+    }
+
+    &__shape {
+        width: 10rem;
+        height: 10rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translate(-3rem, -50%);
+        position: absolute;
+        top: 7.5rem;
+        left: 6.5rem;
+    }
+
+    &__image {
+        height: 100%;
+        transform: translate(1.65rem, 1rem)  scale(1.5);
+        backface-visibility: hidden;
+    }
+
+    &__text {
+        position: absolute;
+        top: 45%;
+        left: 23%;
+        transform: translateY(-50%);
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+}

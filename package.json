@@ -1,0 +1,18 @@
+{
+  "name": "finalportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/app.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.3"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
